@@ -50,7 +50,7 @@ class FeedCell: UITableViewCell {
         }
         // only one like enabled, we must define likes collection and define only likes collection.
         // you must work on firebase and read firebase documantry.
-        // followers collection and you can define fellowship between users.
+        // followers collection and you can define fellowship between users.h ktkkt
         
         
     }
@@ -60,3 +60,4 @@ class FeedCell: UITableViewCell {
     
 
 }
+// push notification is not added, because I havent got apple developer account,
