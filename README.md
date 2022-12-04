@@ -1,2 +1,6 @@
-## First Commit
- Until this commit, I have finished InstaApp. After this I try to learn Push Notifications.
+
+## to run pod install
+While using M1 chip macbook pro, you can't run "pod install". To run this script you have to run these codes in order.
+
+sudo arch -x86_64 gem install ffi
+arch -x86_64 pod install
