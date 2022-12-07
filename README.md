@@ -12,7 +12,7 @@ arch -x86_64 pod install
 # Note
 This repository is still under development and I will continue to add more features to it.
 
-##Features
+## Features
 - Custom photo feed based on who you follow
 - Post photo posts from camera or gallery
 - Like posts
