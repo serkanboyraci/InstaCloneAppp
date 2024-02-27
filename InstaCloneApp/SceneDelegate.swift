@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // to change entry point.
         
-        // 150
+        // 150 
         let currentUser = Auth.auth().currentUser
         
         if currentUser != nil {

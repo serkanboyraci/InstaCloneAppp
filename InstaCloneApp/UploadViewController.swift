@@ -32,7 +32,8 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         view.addGestureRecognizer(gestureRecognizer)
         
-        imageView.isUserInteractionEnabled = true //to enable to user tapped to image
+        //to enable to user tapped to image
+        imageView.isUserInteractionEnabled = true
         let imageTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(selectImage))
         imageView.addGestureRecognizer(imageTapRecognizer)
 
