@@ -22,6 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
         // to change entry point.
+        
+        // 150
         let currentUser = Auth.auth().currentUser
         
         if currentUser != nil {

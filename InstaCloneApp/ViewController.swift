@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     @IBAction func signInClicked(_ sender: Any) {
         
-        if emailText.text != "" && passwordText.text != "" {
+        if emailText.text != "" && passwordText.text != "" { //150
             
             Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in // we use firebase func. here
                 if error != nil {
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     
     @IBAction func signUpClicked(_ sender: Any) {
         
-        if emailText.text != "" && passwordText.text != "" {
+        if emailText.text != "" && passwordText.text != "" { //149
             
             Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { [self] (authdata, error) in // to creaate a user
                 
