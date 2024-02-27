@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FirebaseAuth
+import FirebaseAuth // we must write this
 
 class ViewController: UIViewController {
 
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         if emailText.text != "" && passwordText.text != "" {
             
-            Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in
+            Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in // we use firebase func. here
                 if error != nil {
                     self.makeAlert(titleInput: "Error!!!", messageInput: error?.localizedDescription ?? "Error")
                 } else {
