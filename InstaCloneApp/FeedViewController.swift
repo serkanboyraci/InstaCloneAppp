@@ -93,7 +93,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return useremailArray.count
         }
-        
+        // it is impoartan we must use dequeuereusablecell.
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell // Feedcell defines here
             
