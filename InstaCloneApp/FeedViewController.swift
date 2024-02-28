@@ -38,6 +38,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func getDataFromFirestore () {
         let fireStoreDatabase = Firestore.firestore()
+        // it is important
         /*let settings = fireStoreDatabase.settings // to change firestore settings //ın old versions
          // settings.areTimestampsInSnapshotsEnabled = true
          fireStoreDatabase.settings = settings
@@ -66,6 +67,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                         let documentID = document.documentID
                         self.documentIdArray.append(documentID)
                         
+                        
+                        // we can use it only in one if let structure
                         if let postedBy = document.get("postedBy") as? String { //means if we can take postedby as string, we define as postedBy
                             self.useremailArray.append(postedBy)
                         }
