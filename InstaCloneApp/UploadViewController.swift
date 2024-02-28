@@ -95,7 +95,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                             var firestoreReference : DocumentReference? = nil
                             
                             // we define Post Collection as a Dict // data will be dict string: any
-                            let firestorePost = ["imageUrl" : imageUrl!, "postedBy" : Auth.auth().currentUser?.email!, "postComment" : self.commentText.text,
+                            let firestorePost = ["imageUrl" : imageUrl!, "postedBy" :Auth.auth().currentUser!.email!, "postComment" : self.commentText.text!,
                                                  "date" : FieldValue.serverTimestamp(), "likes" : 0 ]
                             // we define a collection from xcode instead of web
                             firestoreReference = firestoreDatabase.collection("Posts").addDocument(data: firestorePost, completion: { (error) in
