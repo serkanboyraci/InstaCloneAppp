@@ -24,7 +24,7 @@ class FeedCell: UITableViewCell {
     @IBOutlet var likeLabel: UILabel!
     
     
-    @IBOutlet var documentIdLabel: UILabel!
+    @IBOutlet var documentIdLabel: UILabel! // for like count
     
 
     override func awakeFromNib() {
@@ -51,13 +51,7 @@ class FeedCell: UITableViewCell {
         // only one like enabled, we must define likes collection and define only likes collection.
         // you must work on firebase and read firebase documantry.
         // followers collection and you can define fellowship between users.h ktkkt
-        
-        
+    
     }
-    
-    
-    
-    
-
 }
 // push notification is not added, because I havent got apple developer account,
