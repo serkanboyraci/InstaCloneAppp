@@ -83,16 +83,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                         }
                     }
                     self.tableView.reloadData() // to reload Data
-                    
                 }
             }
         }
     }
-        
-        
-        
-        
-        
+  
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return useremailArray.count
         }
